@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nato {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  &__header {
+    text-align: center;
+  }
+}
+
+#nato-input,
+#nato-output {
+  width: 400px;
+  height: 200px;
+  padding: 1px;
+  resize: none;
+}

@@ -4,7 +4,7 @@
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 5px;
   background-color: #292c33;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -15,19 +15,29 @@ body {
   justify-content: space-evenly;
   text-align: center;
   &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     height: 150px;
   }
 }
 
-h1,
+h1 {
+  color: #5b8f47;
+  padding: 2px;
+  margin: 0;
+}
 h2 {
   color: #747965;
+  padding: 1px;
+  margin: 0;
 }
 
 #nato-input,
 #nato-output {
   width: 600px;
+  max-width: 100%;
   height: 200px;
   padding: 1px;
   resize: none;
@@ -42,4 +52,27 @@ h2 {
 textarea:focus {
   border: none;
   outline: none;
+}
+
+@media only screen and (max-width: 1210px) {
+  #nato-input,
+  #nato-output {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .nato {
+    flex-direction: column;
+    &__header {
+      height: 50px;
+    }
+  }
+  // .nato__header {
+  //   height: 50px;
+  // }
+  #nato-input,
+  #nato-output {
+    width: 400px;
+  }
 }

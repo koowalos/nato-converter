@@ -26,6 +26,8 @@ const nato = (w) => {
     X: 'X-ray',
     Y: 'Yankee',
     Z: 'Zulu',
+    ' ': '<space>',
+    '.': '.',
   };
   return [...w.toUpperCase()].map((x) => l[x]).join(' ');
 };

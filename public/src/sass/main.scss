@@ -5,22 +5,41 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #292c33;
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
 
 .nato {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
-
   &__header {
     text-align: center;
+    height: 150px;
   }
+}
+
+h1,
+h2 {
+  color: #747965;
 }
 
 #nato-input,
 #nato-output {
-  width: 400px;
+  width: 600px;
   height: 200px;
   padding: 1px;
   resize: none;
+  background-color: #3e5d4b;
+  color: #f3f3f3;
+}
+
+#nato-output:hover {
+  cursor: default;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
 }

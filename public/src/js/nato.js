@@ -1,5 +1,5 @@
-const nato = (w) => {
-  let l = {
+const nato = (l) => {
+  let w = {
     A: 'Alpha',
     B: 'Bravo',
     C: 'Charlie',
@@ -28,6 +28,9 @@ const nato = (w) => {
     Z: 'Zulu',
     ' ': '<space>',
     '.': '.',
+    '-': '-',
+    '"': '"',
+    "'": "'",
   };
-  return [...w.toUpperCase()].map((x) => l[x]).join(' ');
+  return [...l.toUpperCase()].map((x) => w[x]).join(' ');
 };
